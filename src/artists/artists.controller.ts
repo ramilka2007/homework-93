@@ -1,4 +1,5 @@
 import {
+  BadRequestException,
   Body,
   Controller,
   Delete,
@@ -58,5 +59,4 @@ export class ArtistsController {
 
     return 'Artist has been deleted';
   }
-
 }
