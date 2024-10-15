@@ -14,7 +14,6 @@ import { AuthService } from './auth/auth.service';
 import { PassportModule } from '@nestjs/passport';
 import { LocalStrategy } from './auth/local.strategy';
 import { UniqueUserEmailConstraint } from './users/validators/unique-user-email.validators';
-import { IdExistsConstraint } from './global/validators/id-exist.validator';
 
 @Module({
   imports: [
@@ -39,7 +38,6 @@ import { IdExistsConstraint } from './global/validators/id-exist.validator';
     AuthService,
     LocalStrategy,
     UniqueUserEmailConstraint,
-    IdExistsConstraint,
   ],
 })
 export class AppModule {}
